@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#12695b">
+  <meta name="description" content="ADA300PS TMA CP：十一项新增功能、指令拆解与参数重排的交互指南。">
+  <title>CP 设计手册 · 十一项功能拆解</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="document-data.js" defer></script>
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <aside id="sidebar" class="sidebar" aria-label="主导航"></aside>
+  <div id="sidebar-shade" class="sidebar-shade"></div>
+  <div class="shell">
+    <header class="topbar">
+      <button class="icon-button mobile-menu" data-action="menu" aria-label="展开导航"><span data-icon="menu"></span></button>
+      <div class="breadcrumb">设计手册 <span>/</span> <strong id="crumb">方案总览</strong></div>
+      <button class="search-trigger" data-action="search"><span data-icon="search"></span><span>搜索功能、模块或关键词</span><kbd>Ctrl K</kbd></button>
+      <span class="local-status"><i></i> 公开阅读版</span>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer"><span>ADA300PS · TMA / CP</span><span>基于 2026.10.15 修订方案 · 设计建议与实现状态分开记录</span></footer>
+  </div>
+  <dialog id="search-dialog" class="search-dialog">
+    <div class="search-input-wrap"><span data-icon="search"></span><input id="search-input" type="search" aria-label="搜索手册" placeholder="试试 gather、box_start、rd_ctrl…" autocomplete="off"><button class="icon-button" data-action="close-search" aria-label="关闭搜索"><span data-icon="close"></span></button></div>
+    <div id="search-results" class="search-results"></div>
+    <div class="search-hint">搜索范围：11 项功能、公共模块与完整文档。按 Esc 关闭。</div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p>请启用浏览器 JavaScript，以使用思维导图和交互说明。</p></noscript>
+</body>
+</html>
